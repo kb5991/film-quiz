@@ -1,6 +1,6 @@
 /* Target DOM elements */
 const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'))
+const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -8,8 +8,8 @@ const progressBarFull = document.querySelector('#progressBarFull');
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
-let questionCounter=0;
-let availableQuestions = []
+let questionCounter = 0;
+let availableQuestions = [];
 
 /* Creating an array with objects for my questions */
 let questions = [
@@ -53,4 +53,34 @@ let questions = [
         choice 4: 'Ryan',
         answer: 1,
     },
-]
+];
+
+const SCORE_POINTS = 100
+const MAX_QUESTIONS = 5
+
+/* This will keep track of the score */
+startGame = () => {
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
+    getNextQuestion()
+}
+
+getNextQuestion = () => {
+    ifavailableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        return window.location.assign('/end.html')
+    }
+
+/* This will increment the question counter by 1 each time, e.g. question 1 of 5 */
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+/*This will update the progress bar */
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+
+/* This will keep track of the question the user is on */
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+}
