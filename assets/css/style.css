@@ -4,8 +4,8 @@
 /* Asterisk wildcard selector overriding default browser styles */
 *{
     box-sizing: border-box;
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
@@ -160,8 +160,27 @@ h2 {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
+@media screen and (max-width: 425px) {
+    .play-area h1 {
+        font-size: 8rem;
+        margin-top: 800px;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 500px;
+        height: 200px;
+        font-size: 5rem;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .hud {
+        width: 100vh;
     }
 }
+
+/* @media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+} /*
