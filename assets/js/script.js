@@ -15,48 +15,48 @@ let availableQuestions = [];
 let questions = [
     {
         question: 'What is the name of the building where the events of Die Hard take place?',
-        choice 1: 'The Eiffel Tower',
-        choice 2: 'Nakatomi Tower',
-        choice 3: 'Nakatomi Plaza',
-        choice 4: 'The Rockerfeller Center',
+        choice1: 'The Eiffel Tower',
+        choice2: 'Nakatomi Tower',
+        choice3: 'Nakatomi Plaza',
+        choice4: 'The Rockerfeller Center',
         answer: 3,
     },
     {
         question: 'Where does John Wick check-in after retrieving his weapons and gold coins from under his floor in the first John Wick?',
-        choice 1: 'The Rosewood',
-        choice 2: 'Chateau Marmont',
-        choice 3: 'The Beverly Hills Hotel',
-        choice 4: 'The Continental Hotel',
+        choice1: 'The Rosewood',
+        choice2: 'Chateau Marmont',
+        choice3: 'The Beverly Hills Hotel',
+        choice4: 'The Continental Hotel',
         answer: 4,
     },
     {
         question: 'Which James Bond film marked the first appearance of M played by Dame Judi Dench?',
-        choice 1: 'Golden Eye',
-        choice 2: 'Casino Royale',
-        choice 3: 'Skyfall',
-        choice 4: 'Licence to Kill',
+        choice1: 'Golden Eye',
+        choice2: 'Casino Royale',
+        choice3: 'Skyfall',
+        choice4: 'Licence to Kill',
         answer: 1,
     },
     {
         question: 'Who stars in Atomic Blonde?',
-        choice 1: 'Cameron Diaz',
-        choice 2: 'Charlize Theron',
-        choice 3: 'Dianna Agron',
-        choice 4: 'Hayden Panettiere',
+        choice1: 'Cameron Diaz',
+        choice2: 'Charlize Theron',
+        choice3: 'Dianna Agron',
+        choice4: 'Hayden Panettiere',
         answer: 2,
     },
     {
         question: 'What is the main character, played by Ryan Gosling, in Drive called?',
-        choice 1: 'His name is never said',
-        choice 2: 'Bob',
-        choice 3: 'Dave',
-        choice 4: 'Ryan',
+        choice1: 'His name is never said',
+        choice2: 'Bob',
+        choice3: 'Dave',
+        choice4: 'Ryan',
         answer: 1,
     },
 ];
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 5
+const SCORE_POINTS = 100;
+const MAX_QUESTIONS = 5;
 
 /* This will keep track of the score */
 startGame = () => {
@@ -67,7 +67,7 @@ startGame = () => {
 }
 
 getNextQuestion = () => {
-    ifavailableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('/end.html')
@@ -76,6 +76,7 @@ getNextQuestion = () => {
 /* This will increment the question counter by 1 each time, e.g. question 1 of 5 */
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    
 /*This will update the progress bar */
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
@@ -83,4 +84,5 @@ getNextQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
+    
 }

@@ -149,7 +149,6 @@ h2 {
     height: 3rem;
     border: 0.2rem solid rgb(11,223,36);
     margin-top: 2rem;
-    border-radius: 50px;
     overflow: hidden;
 }
 
@@ -175,12 +174,8 @@ h2 {
         padding: 50px;
     }
 
-    .hud {
-        width: 100vh;
+    .hud-prefix p {
+        position: absolute;
+        padding: 25px;
     }
 }
-
-/* @media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-} /*
