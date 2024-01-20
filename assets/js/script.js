@@ -63,20 +63,19 @@ startGame = () => {
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
-    getNextQuestion()
+    getNewQuestion()
 }
 
-getNextQuestion = () => {
+getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('end.html')
     }
 
 /* This will increment the question counter by 1 each time, e.g. question 1 of 5 */
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    
 /*This will update the progress bar */
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
@@ -84,6 +83,44 @@ getNextQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
-    
-    
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
 }
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 1000)
+    })
+})
+
+incrementScore = num => {
+    score =+num
+    scoreText.innerText = score
+}
+
+startGame()
