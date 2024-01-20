@@ -160,7 +160,7 @@ h2 {
 }
 
 /* End page styles */
-.end-form-container {
+form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -172,6 +172,7 @@ h2 {
     font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
+    margin-left: 10px;
 }
 
 input {
@@ -184,23 +185,24 @@ input {
 
 #username {
     margin-bottom: 3rem;
+    margin-left: 15px;
     width: 100%;
     outline: none;
 } 
 
+#finalScore {
+    text-align: center;
+    padding-top: 50px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 425px) {
     .play-area h1 {
-        font-size: 8rem;
-        margin-top: 800px;
-        padding: 15px;
+        font-size: 2.5rem;
+        margin-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: center;
     }
 
-    .btn {
-        width: 500px;
-        height: 200px;
-        font-size: 5rem;
-        text-align: center;
-        padding: 50px;
-    }
 }
