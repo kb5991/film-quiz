@@ -240,4 +240,33 @@ input {
         margin-top: 15px;
     }
 
+    /* Game Page */
+    .game-area {
+        width: 50%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .choice-container {
+        display: flex;
+        margin-bottom: 0.8rem;
+        width: 100%;
+        border-radius: 4px;
+        background: rgba(117, 117, 116, 0.705);
+        font-size: 3rem;
+        max-width: 80rem;
+    }
 }
