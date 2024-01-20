@@ -69,7 +69,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
     /* This will increment the question counter by 1 each time, e.g. question 1 of 5 */
     questionCounter++;
