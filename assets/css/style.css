@@ -217,6 +217,16 @@ input {
     margin-bottom: 600px;
 }
 
+/* Leaderboard Styles */
+body {
+    color: white;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 425px) {
     .play-area h1 {
