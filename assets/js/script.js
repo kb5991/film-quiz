@@ -85,4 +85,5 @@ getNextQuestion = () => {
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
     
+    
 }
