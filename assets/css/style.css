@@ -95,6 +95,16 @@ h2 {
 }
 
 /* Game page styles */
+.game-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
 /* Choice Styles */
 .choice-container {
@@ -162,6 +172,17 @@ h2 {
 }
 
 /* End page styles */
+.end-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 form {
     width: 100%;
     display: flex;
@@ -192,9 +213,8 @@ input {
     outline: none;
 } 
 
-#finalScore {
-    text-align: center;
-    padding-top: 50px;
+.end-area h1 {
+    margin-bottom: 600px;
 }
 
 /* Media Queries */
@@ -219,7 +239,5 @@ input {
     #score {
         margin-top: 15px;
     }
-
-    
 
 }
