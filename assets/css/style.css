@@ -96,7 +96,7 @@ h2 {
 
 /* Game page styles */
 .game-area {
-    width: 100vw;
+    width: 60%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -104,6 +104,11 @@ h2 {
     min-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+#question {
+    width: 80%;
+    padding-left: 200px;
 }
 
 /* Choice Styles */
@@ -262,7 +267,7 @@ body {
         margin-top: 15px;
     }
 
-    /* Game Page */
+    /* Game Page 
     .game-area {
         width: 50%;
         height: 10%;
@@ -272,7 +277,7 @@ body {
         max-width: 80rem;
         margin: 0 auto;
         padding: 2rem;
-    }
+    }*/
 
     h1 {
         color: white;
