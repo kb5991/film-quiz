@@ -96,13 +96,13 @@ h2 {
 
 /* Game page styles */
 .game-area {
-    width: 60%;
+    width: 40%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 80rem;
     margin: 0 auto;
+    min-width: 80rem;
     padding: 2rem;
 }
 
@@ -279,9 +279,31 @@ body {
     h1 {
         font-size: 2rem;
     }
-
 }
 
 @media screen and (max-width: 768px) {
+    #progressText {
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #progressBar {
+        width: 60%;
+    }
+
+    #question {
+        font-size: 2rem;
+        width: 80%;
+        padding-left: 100px;
+    }
+
+    p#scoreText {
+        font-size: 2rem;
+        padding-right: 50px;
+    }
+
+    h1#score {
+        padding-right: 50px;
+    }
 
 }
