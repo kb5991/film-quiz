@@ -254,39 +254,34 @@ body {
         text-align: center;
     }
 
-    #progressText {
-        margin-top: 15px;
-    }
-
-    .hud-prefix {
-        margin-top: 15px;
-        padding-right: 10px;
-    }
-
-    #score {
-        margin-top: 15px;
-    }
-
     /* Game Page */
-    .game-area {
+    #progressText {
+        padding-left: 10px;
+    }
+
+    #progressBar {
         width: 50%;
     }
 
-    h1 {
-        color: white;
-        margin-bottom: 5rem;
-        text-transform: uppercase;
-        font-size: 2rem;
-        text-align: center;
+    #question {
+        width: 40%;
+        padding: 10px;
     }
 
-    .choice-container {
-        display: flex;
-        margin-bottom: 0.8rem;
-        width: 80%;
-        border-radius: 4px;
-        background: rgba(117, 117, 116, 0.705);
-        font-size: 3rem;
-        max-width: 80rem;
+    p#scoreText {
+        padding-right: 500px;
     }
+
+    h1#score {
+        padding-right: 500px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
 }
