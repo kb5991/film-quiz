@@ -244,7 +244,58 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 320px) {
+    .play-area h1 {
+        font-size: 2.5rem;
+        margin-top: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: center;
+    }
+
+    #hud {
+        justify-content: space-between;
+    }
+
+    p#scoreText {
+        padding-right: 400px;
+    }
+
+    h1#score {
+        padding-right: 400px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #progressText {
+        padding-left: 10px;
+    }
+
+    #progressBar {
+        width: 50%;
+    }
+
+    p#scoreText {
+        padding-right: 500px;
+    }
+
+    h1#score {
+        padding-right: 500px;
+    }
+
+    #question {
+        width: 40%;
+        padding: 10px;
+    }
+
+    .choice-container {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 425px) {
     .play-area h1 {
         font-size: 2.5rem;
         margin-top: 100px;
@@ -269,15 +320,20 @@ body {
 
     #question {
         width: 40%;
+        margin-left: 50px;
         padding: 10px;
     }
 
+    #hud {
+        justify-content: space-between;
+    }
+
     p#scoreText {
-        padding-right: 500px;
+        padding-right: 400px;
     }
 
     h1#score {
-        padding-right: 500px;
+        padding-right: 400px;
     }
 
     h1 {
@@ -285,7 +341,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     #progressText {
         font-size: 2rem;
         padding-left: 10px;
