@@ -244,7 +244,7 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .play-area h1 {
         font-size: 2.5rem;
         margin-top: 100px;
@@ -339,6 +339,10 @@ body {
     h1 {
         font-size: 2rem;
     }
+
+    .choice-container {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -364,6 +368,10 @@ body {
 
     h1#score {
         padding-right: 50px;
+    }
+
+    .choice-container {
+        width: 95%;
     }
 
 }
