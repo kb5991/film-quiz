@@ -164,7 +164,7 @@ h2 {
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid rgb(11,223,36);
+    border: 0.2rem solid greenyellow;
     margin-top: 2rem;
     margin-left: 10px;
     overflow: hidden;
@@ -172,7 +172,7 @@ h2 {
 
 #progressBarFull {
     height: 100%;
-    background: rgb(11, 223, 36);
+    background: greenyellow;
     width: 0%;
 }
 
@@ -267,17 +267,10 @@ body {
         margin-top: 15px;
     }
 
-    /* Game Page 
+    /* Game Page */
     .game-area {
         width: 50%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 80rem;
-        margin: 0 auto;
-        padding: 2rem;
-    }*/
+    }
 
     h1 {
         color: white;
@@ -290,7 +283,7 @@ body {
     .choice-container {
         display: flex;
         margin-bottom: 0.8rem;
-        width: 100%;
+        width: 80%;
         border-radius: 4px;
         background: rgba(117, 117, 116, 0.705);
         font-size: 3rem;
