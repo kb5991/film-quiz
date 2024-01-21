@@ -112,7 +112,7 @@ h2 {
 }
 
 /* Choice Styles */
-.choice-container {
+.choices {
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
@@ -121,7 +121,7 @@ h2 {
     font-size: 3rem;
 }
 
-.choice-container:hover {
+.choices:hover {
     background: rgba(160, 160, 159, 0.705);
 }
 
@@ -290,7 +290,7 @@ body {
         padding: 10px;
     }
 
-    .choice-container {
+    .choices {
         width: 35%;
     }
 }
@@ -340,7 +340,7 @@ body {
         font-size: 2rem;
     }
 
-    .choice-container {
+    .choices {
         width: 50%;
     }
 }
@@ -370,7 +370,7 @@ body {
         padding-right: 50px;
     }
 
-    .choice-container {
+    .choices {
         width: 95%;
     }
 
