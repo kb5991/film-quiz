@@ -144,8 +144,8 @@ h2 {
     background: red;
 }
 
-/* HUD Styles */
-#hud {
+/* Display Styles */
+#display {
     display: flex;
     justify-content: space-evenly;
 }
@@ -255,7 +255,7 @@ body {
     }
 
     /* Game page */
-    #hud {
+    #display {
         justify-content: space-between;
     }
 
@@ -306,7 +306,7 @@ body {
         padding-right: 60px;
         text-align: center;
     }
-    
+
     /* Game Page */
     .game-area{
         width: 60%;
@@ -326,7 +326,7 @@ body {
         padding: 10px;
     }
 
-    #hud {
+    #display {
         justify-content: space-between;
     }
 
