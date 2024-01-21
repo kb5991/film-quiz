@@ -14,7 +14,7 @@ finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
-
+/* This will save the highscore to the leaderboard */
 saveHighScore = e => {
     e.preventDefault();
 
@@ -28,11 +28,11 @@ saveHighScore = e => {
     highScores.sort((a, b) => {
         return b.score - a.score;
     });
-
+/* This will remove and replace names on the leaderboard once 5 places on the leaderboad have been taken */
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
+/* This will redirect user to homepage */
     window.location.assign('/film-quiz/');
-
 
 };

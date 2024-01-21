@@ -244,6 +244,7 @@ body {
 }
 
 /* Media Queries */
+/* For smaller screens */
 @media screen and (max-width: 375px) {
     .play-area h1 {
         font-size: 2.5rem;
@@ -253,6 +254,7 @@ body {
         text-align: center;
     }
 
+    /* Game page */
     #hud {
         justify-content: space-between;
     }
@@ -295,6 +297,7 @@ body {
     }
 }
 
+/* For larger mobiles */
 @media screen and (min-width: 425px) {
     .play-area h1 {
         font-size: 2.5rem;
@@ -303,9 +306,8 @@ body {
         padding-right: 60px;
         text-align: center;
     }
-
+    
     /* Game Page */
-
     .game-area{
         width: 60%;
     }
@@ -345,6 +347,7 @@ body {
     }
 }
 
+/* For tablets and larger */
 @media screen and (min-width: 768px) {
     #progressText {
         font-size: 2rem;
