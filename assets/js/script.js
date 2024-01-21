@@ -1,3 +1,4 @@
+/* Functions have been written with help from YouTube */
 /* Target DOM elements */
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
@@ -80,17 +81,17 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-
+    /* This will tell us the choice that the user has clicked on */
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
-
+    /* This will add and replace our questions from the quiz */
     availableQuestions.splice(questionsIndex, 1);
 
     acceptingAnswers = true;
 };
-
+/* This listens for the user's click and will toggle the CSS to colour the answer either green or red dependent on whether the choice is true or false */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -100,13 +101,13 @@ choices.forEach(choice => {
         const selectedAnswer = selectedChoice.dataset['number'];
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
+/* This will increment the score by 100 if the user clicks a true choice */
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
-
+/* This makes sure that when a choice is clicked, there is time to show whether the answer chosen is true or false and will run the next question after */
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
@@ -114,7 +115,7 @@ choices.forEach(choice => {
         }, 1000);
     });
 });
-
+/* This makes sure the score updates */
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;

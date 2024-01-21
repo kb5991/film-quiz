@@ -1,3 +1,4 @@
+/* Functions have been written with help from YouTube */
 /* Target DOM elements */
 const username = document.querySelector('#username');
 const saveScoreBtn = document.querySelector('#saveScoreBtn');
