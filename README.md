@@ -277,7 +277,7 @@ This made it very hard to see which media queries I should be implementing and s
 ## Credits
 
 ### Code Used
-To assist with the code writing and game functions of this website, I used the following tutorial:
+For the code writing and game functions of this website, I used the following tutorial:
 - [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY)
 
 ### Images

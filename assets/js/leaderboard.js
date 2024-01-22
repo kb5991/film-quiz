@@ -1,4 +1,4 @@
-/* Functions have been written with help from YouTube */
+/* Functions have been written with help from YouTube Brian Design */
 const highScoresList = document.querySelector('#highScoresList');
 /* This will get the highscores for the leaderboard */
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];

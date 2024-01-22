@@ -1,4 +1,4 @@
-/* Functions have been written with help from YouTube */
+/* Functions have been written with help from YouTube Brian Design */
 /* Target DOM elements */
 const username = document.querySelector('#username');
 const saveScoreBtn = document.querySelector('#saveScoreBtn');
