@@ -76,7 +76,7 @@ The homepage for the website shows a simplistic design featuring the title of th
 1. Homepage on desktop
 ![homepage on desktop](assets/images/homepage.png)
 
-2. Homepage on mobile
+2. Homepage on mobile<br>
 ![homepage on mobile](assets/images/homepagemobile.png)
 
 ### Main Quiz Page
@@ -86,7 +86,7 @@ Upon clicking play, the user is taken to the quiz page, presenting them with the
 1. Quiz page on desktop
 ![quiz page on desktop](assets/images/quizpage.png)
 
-2. Quiz page on mobile
+2. Quiz page on mobile<br>
 ![quiz page on mobile](assets/images/quizpagemobile.png)
 
 3. Progress and score bars
@@ -99,7 +99,7 @@ Upon completion of the quiz, the user is redirected to the end page where they a
 1. End page on desktop
 ![end page on desktop](assets/images/endpage.png)
 
-2. End page on mobile
+2. End page on mobile<br>
 ![end page on mobile](assets/images/endpagemobile.png)
 
 ### Leaderboard page
@@ -109,14 +109,24 @@ The leaderboard page can be accessed from the homepage, upon completion of the f
 1. Leaderboard page on desktop
 ![leaderboard page on desktop](assets/images/leaderboard.png)
 
-2. Leaderboard page on mobile 
+2. Leaderboard page on mobile<br> 
 ![leaderboard page on mobile](assets/images/leaderboardmobile.png)
+
+### 404 Error Page
+
+If the user clicks on a broken link, they are redirected to the 404 error page which invites them to click on a link which will redirect them to the homepage.
+
+1. Error page on desktop
+![error page on desktop](assets/images/errorpagedesktop.png)
+
+2. Error page on mobile
+![error page on mobile](assets/images/errorpagemobile.png)
 
 ### Notifications
 
 Users are notified when they have chosen a correct or incorrect answer to a question with the answer flashing green for correct and red for incorrect. Users are unable to push the save button on the end page to save their score until a name has been entered.
 
-1. Correct Answer
+1. Correct Answer<br>
 ![correct answer](assets/images/correctanswer.png)
 
 2. Incorrect Answer
